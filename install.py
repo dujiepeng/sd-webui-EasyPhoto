@@ -54,9 +54,9 @@ if not is_installed("cv2"):
     print("Installing requirements for easyphoto-webui")
     launch.run_pip("install opencv-python", "requirements for opencv")
 
-if not is_installed("tensorflow-cpu"):
-    print("Installing requirements for easyphoto-webui")
-    launch.run_pip("install tensorflow-cpu", "requirements for tensorflow")
+# if not is_installed("tensorflow-cpu"):
+#     print("Installing requirements for easyphoto-webui")
+#     launch.run_pip("install tensorflow-cpu", "requirements for tensorflow")
 
 if not is_installed("onnx"):
     print("Installing requirements for easyphoto-webui")
@@ -112,7 +112,7 @@ if not is_installed("diffusers>=0.18.2"):
         print(f"Can't install the diffusers==0.23.0. Error info {e}")
         launch.run_pip("install diffusers==0.18.2", "requirements for diffusers")
 
-if platform.system() != "Windows":
-    if not is_installed("nvitop"):
-        print("Installing requirements for easyphoto-webui")
-        launch.run_pip("install nvitop==1.3.0", "requirements for tensorflow")
+# if platform.system() != "Windows":
+#     if not is_installed("nvitop"):
+#         print("Installing requirements for easyphoto-webui")
+#         launch.run_pip("install nvitop==1.3.0", "requirements for tensorflow")
